@@ -79,5 +79,17 @@ $(document).ready(function() {
 
 
   // Add Your Code Here.
+  /*When the delete icons for a song are clicked slide up that song over 0.5s.
+  AFTER the song is finished sliding up, remove it from the list entirely.*/
+  $('.fa-trash').on('click',function(){
+    // $('#library-list ')
+    $(this).parent().slideUp(500);
+
+
+  });
+
+
+ 
+
 
 });
