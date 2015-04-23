@@ -89,7 +89,19 @@ $(document).ready(function() {
   });
 
 
- 
+  /*Make the song notes hidden when the page initially loads.
+  Then, when you double click a song, they should slide down over 0.3 second.
+   (Hint: See the dblclick event type)*/
+
+   $('.notes').hide();
+
+   $('.title').dblclick(function(){
+    
+     $(this).slideDown().siblings().show(300);
+
+   });
+
+
 
 
 });
